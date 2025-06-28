@@ -1,0 +1,143 @@
+Cascading style sheets
+
+
+/* comment */ for css
+
+selectors in css , body is the selector  like body{background-color : green}
+basically select any tag u want , like h1{and u style inside this}
+
+u can select elements based on id also , css will go into html file and check for id=welcome and make it green
+#welcome{ style } for id we use #
+.heading {  style } for class we use .
+<h1 class="heading">tomi</h1>
+<p id="welcome">hi</p>
+
+if only h1 elements with class heading then h1.heading{ style }
+
+all h1 will be green if h1{   }
+
+*{ style }  is a universal selector every single element will be affected by the asterisk.
+
+grouping selectors useful to not keep repeating same declaration
+h1,p { color: green}
+
+body { background-color : mediumslateblue;
+       opacity: 0.9 
+       background-image: url("image address keep nig")
+       background-position: right top;
+}
+
+selector u can do 50px and all 
+p{margin-left : 50px } or u can do p{margin-left: 50%} percent actually does full 50 percent of total , 50 px is pixels
+margin-top , margin-right , margin-bottom also 
+instead just write p{margin: 50px 50px 50px 50px} T R B L margins automatically understand.
+
+inherit means it will see the same margin whos on top if margin-top: inherit
+
+p{border-style :dotted}
+dotted style around dat
+dotted, solid, groove(slimmer than solid),dash(more dash than dotted),double , ridge ,outset,inset(up thick),none , hidden also 
+border-width : 6px and shi , medium , thick as well 
+border-width 10px 5px 11px 22px for each T R B L only
+border-color : purple;
+can even do border-top-style : dashed ;
+border-right-style : dotted;
+border-style : dashed dotted ; better way of doing
+border-left: dashed means no where else border will be there only in left and dashed 
+border-left : 10px dashed purple also works omg
+border-radius : 4px /10px , round border sax
+
+padding-top :40px; space of 40px nicely
+
+40px 20px 30px , TOP , left and right , bottom 
+
+height : 90px , means height of that particular elemnt 90 , so backgroundcolor if i put 90 full it be 
+
+
+outline is outside the border dem 
+text-align left is default , put centre and right if u want.
+justify whole text wraps aroudn the length of the screen it seems
+text-align-last aligns the last line of the text.
+text-decoration-line :underline , overline ,line-through 
+text-decoration-color , style , thickness
+none also useful , text-decoration : none , becayuse when u do <a href:smtg> then underline comes off so to remove 
+
+text-trasnform also works op uppercase lowercase capitalize also op 
+text-indent:30px space before it like tab
+letter-spacing as well 30px keep op
+
+font to change very imp
+font-family : Arial,
+font-style : oblique ,italic,normal 
+font-weight : bold 
+font-size: 50px, or 50em also like 16px is 1 em 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">"computer"</i>
+
+
+table,th,td{
+
+    border : 2px solid;
+    width : 50%;
+    border-collapse:collapse;
+}
+th,td{
+    text-align:left;
+    padding :10px;
+}
+tr:hover{
+    background-color:blue (only when mouse over it , table row turns blue oppppp)
+}
+display:none (remove the particular selector from the webpage)
+visibility : hidden (there but not shown , so next starts next line)
+
+combinators op 
+h1 b{
+    color:red (all bs under h1 descendant red)
+}
+
+now child selector 
+h1>b {
+    color : red (direct child of h1 only red , isnide some other tag p , it wont be red)
+}
+h1+b{
+    color : red ( all after h1 not inside (not kid)) only adjacent selector 
+}
+h1 ~ b {
+    any sibiling of h1 will be red 
+}
+
+
+<button class="dropdownbutton">Dropdown button</button>
+<div class="dropdown-menu">
+
+</div>
+
+.dropdownbutton{
+    background-color:blue;
+    color:white;
+    padding:13px;
+    cursor:pointer;(when i hover it become pointer)
+}
+.dropdown-menu{
+
+}
+
+
+div[class]{
+    (attribute selector)
+}
+div[class="test"]{
+    works!
+}
+
+
+
+
+
+
+
+
+
